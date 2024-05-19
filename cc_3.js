@@ -27,18 +27,30 @@ class Car {
     }
 }
 
-// Test the Car classes and implementations
+// Test the Car class and implementations, gives a description of events.
 const car1 = new Car('BMW', 120);
 const car2 = new Car('Mercedes', 95);
 
-console.log("Testing BMW:");
+console.log("Initial state of the cars:");
+console.log(`BMW starts at ${car1.speed} km/h`);
+console.log(`Mercedes starts at ${car2.speed} km/h`);
+
+console.log("\nTesting BMW:");
+console.log("BMW is accelerating...");
 car1.accelerate(); // BMW is going at 130 km/h
+console.log("BMW is braking...");
 car1.brake(); // BMW is going at 125 km/h
+console.log("BMW is accelerating again...");
 car1.accelerate(); // BMW is going at 135 km/h
+console.log("BMW is braking again...");
 car1.brake(); // BMW is going at 130 km/h
 
 console.log("\nTesting Mercedes:");
+console.log("Mercedes is accelerating...");
 car2.accelerate(); // Mercedes is going at 105 km/h
+console.log("Mercedes is braking...");
 car2.brake(); // Mercedes is going at 100 km/h
+console.log("Mercedes is accelerating again...");
 car2.accelerate(); // Mercedes is going at 110 km/h
+console.log("Mercedes is braking again...");
 car2.brake(); // Mercedes is going at 105 km/h
