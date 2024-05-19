@@ -4,6 +4,11 @@ class Car {
         this.make = make;
         this.speed = speed;
     }
+
+    accelerate() {
+        this.speed += 10;
+        console.log(`${this.make} is going at ${this.speed} km/h`);
+    }
 }
 
 module.exports = Car;
